@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>WEB RETOS</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="logo">WEB RETOS</a></li>
+            <li><a href="#" class="link">Categorías</a></li>
+            <li><a href="#" class="link">Retos</a></li>
+            <li><a href="#" class="link">Grupos</a></li>
+            <li><a href="#" class="link sesion">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div id="navVertical">
+        <ul>
+            <li><a href="#">Crear Categoría</a></li>
+            <li><a href="#">Listar Categorías</a></li>
+            <li><a href="#">Crear Reto</a></li>
+            <li><a href="#">Listar Retos</a></li>
+            <li><a href="#">Asignar Grupo a Reto</a></li>
+            <li><a href="#">Crear Grupo</a></li>
+            <li><a href="#">Listar Grupos</a></li>
+        </ul>
+    </div>
+
+    <div id="formulario">
+        <h1>Crear Retos</h1>
+        <form action="">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="dirigido">Dirigido a:</label>
+                <input type="text" name="dirigido" id="dirigido">
+            </div>
+
+            <div>
+                <label for="selectCat">Categoria</label>
+                <select name="selectCat" id="selectCat">
+                    <option>Categoria 1</option>
+                    <option>Categoria 2</option>
+                    <option>Categoria 3</option>
+                    <option>Categoria 4</option>
+                    <option>Categoria 5</option>
+                </select>
+
+                <label>Publicar</label>
+                <label for="si">SI</label>
+                <input type="radio" id="si" name="fav_language" value="SI">
+
+                <label for="no">NO</label>
+                <input type="radio" id="no" name="fav_language" value="NO">
+            </div>
+
+            <div>
+                <label for="fir">Fecha Inicio Reto</label>
+                <input type="date" id="fir">
+                <label for="ffr">Fecha Fin Reto</label>
+                <input type="date" id="ffr">
+            </div>
+
+            <div>
+                <label for="fii">Fecha Inicio Inscripción</label>
+                <input type="date" id="fii">
+                <label for="ffi">Fecha Fin Inscripción</label>
+                <input type="date" id="ffi">
+            </div>
+
+            <div>
+                <label for="">Descripción</label>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
+
+            <div id="botones">
+                <button>Volver</button>
+                <input type="button" value="Aceptar">
+            </div>
+        </form>
+    </div>
+
+    <div id="imagenF">
+        <img src="fundacion.jpg" alt="" width="150">
+    </div>
+</body>
+
+</html>

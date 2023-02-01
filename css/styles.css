@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: content-box;*/
+
+}
+
+body {
+    border: 1px solid black;
+    width: 1280px;
+    height: 720px;
+}
+
+nav {
+    width: 1280px;
+    height: 80px;
+    background: darkslategray;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    list-style: none;
+    transform: translate(0%, -50%);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 300px;
+}
+
+.link {
+    width: 200px;
+}
+
+.sesion {}
+
+/* Change the link color to #111 (black) on hover */
+.link:hover {
+    background-color: #111;
+}
+
+#navVertical {
+    width: 300px;
+    overflow: hidden;
+    height: 640px;
+    background-color: grey;
+    float: left;
+}
+
+#navVertical ul {
+    color: black;
+    width: 300px;
+}
+
+#navVertical li a {
+    display: block;
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+/*Formulario*/
+
+#formulario {
+    float: left;
+    margin-left: 80px;
+    margin-top: 60px;
+    width: 618px;
+    height: 458px;
+    background-color: lightblue;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 8px 5px 5px gray;
+}
+
+#formulario h1 {
+    margin-bottom: 40px;
+}
+
+#formulario div {
+    margin-bottom: 40px;
+}
+
+#formulario input {
+    width: 200px;
+}
+#formulario input[type="radio"] {
+    width: auto;
+}
+#botones {
+    float: right;
+}
+
+#botones input,
+#botones button {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: gray;
+}
+
+
+
+#botones input {
+    background-color: green;
+}
+
+/*Imagen*/
+
+#imagenF {
+    float: left;
+    margin-top: 60px;
+    margin-left: 30px;
+}
