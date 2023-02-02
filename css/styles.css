@@ -34,7 +34,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,11 +50,12 @@ nav ul li a {
 
 .sesion {}
 
-/* Change the link color to #111 (black) on hover */
+
 .link:hover {
     background-color: #111;
 }
 
+/*Navbar vertical*/
 #navVertical {
     width: 300px;
     overflow: hidden;
@@ -68,6 +69,10 @@ nav ul li a {
     width: 300px;
 }
 
+#navVertical ul li {
+    border-bottom: 1px solid black;
+}
+
 #navVertical li a {
     display: block;
     width: 300px;
@@ -75,7 +80,12 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     color: black;
+    margin-top: 10px;
 }
+#navVertical li:hover{
+    background-color: lightblue;
+}
+
 
 /*Formulario*/
 
@@ -97,15 +107,31 @@ nav ul li a {
 }
 
 #formulario div {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
-#formulario input {
-    width: 200px;
+#formulario input,
+#formulario select {
+    border: 0;
+    width: 150px;
+    height: 20px;
+    border-radius: 4px;
 }
-#formulario input[type="radio"] {
-    width: auto;
+
+#formulario label {
+    margin-left: 10px;
+    display: inline-block;
+    width: 100px;
 }
+
+#formulario textarea {
+    margin-left: 10px;
+}
+
+#formulario p {
+    margin-bottom: 5px;
+}
+
 #botones {
     float: right;
 }
@@ -118,8 +144,6 @@ nav ul li a {
     border-radius: 3px;
     background-color: gray;
 }
-
-
 
 #botones input {
     background-color: green;
