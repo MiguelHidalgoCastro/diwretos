@@ -48,7 +48,9 @@ nav ul li a {
     width: 200px;
 }
 
-.sesion {}
+.sesion {
+    float: right;
+}
 
 
 .link:hover {
@@ -75,14 +77,16 @@ nav ul li a {
 
 #navVertical li a {
     display: block;
-    width: 300px;
+    width: 260px;
     height: 60px;
     text-decoration: none;
     text-align: center;
     color: black;
-    margin-top: 10px;
+    /* arriba | derecha | abajo | izquierda */
+    padding: 10px 20px 0 20px;
 }
-#navVertical li:hover{
+
+#navVertical li:hover {
     background-color: lightblue;
 }
 
@@ -94,7 +98,8 @@ nav ul li a {
     margin-left: 80px;
     margin-top: 60px;
     width: 618px;
-    height: 458px;
+    /*Comparado con el boceto, hay 30px menos porque en la foto he puesto un margin left de 30px*/
+    height: 459px;
     background-color: lightblue;
     padding: 50px;
     border: 1px solid black;
@@ -149,10 +154,13 @@ nav ul li a {
     background-color: green;
 }
 
-/*Imagen*/
+/*Div Imagen*/
 
 #imagenF {
     float: left;
     margin-top: 60px;
     margin-left: 30px;
+    background: lightpink;
+    width: 150px;
+    height: 150px;
 }
