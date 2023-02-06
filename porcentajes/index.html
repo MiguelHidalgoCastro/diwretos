@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>WEB RETOS - Porcentajes</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="lilogo"><a href="#" class="logo">WEB RETOS</a></li>
+            <li><a href="#" class="link">Categorías</a></li>
+            <li><a href="#" class="link">Retos</a></li>
+            <li><a href="#" class="link">Grupos</a></li>
+            <li class="sesion"><a href="#" class="link">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div id="navVertical">
+        <ul>
+            <li><a href="#">Crear Categoría</a></li>
+            <li><a href="#">Listar Categorías</a></li>
+            <li><a href="#">Crear Reto</a></li>
+            <li><a href="#">Listar Retos</a></li>
+            <li><a href="#">Asignar Grupo a Reto</a></li>
+            <li><a href="#">Crear Grupo</a></li>
+            <li><a href="#">Listar Grupos</a></li>
+        </ul>
+    </div>
+
+    <div id="formulario">
+        <h1>Crear Retos</h1>
+        <form action="">
+            <div id="d1">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="dirigido">Dirigido a:</label>
+                <input type="text" name="dirigido" id="dirigido">
+            </div>
+            <div id="d2">
+                <label for="selectCat">Categoria</label>
+                <select name="selectCat" id="selectCat">
+                    <option>Categoria 1</option>
+                    <option>Categoria 2</option>
+                    <option>Categoria 3</option>
+                    <option>Categoria 4</option>
+                    <option>Categoria 5</option>
+                </select>
+
+
+                <label for="selectPub">Publicar</label>
+                <select name="selectPub" id="selectPub">
+                    <option>SI</option>
+                    <option>NO</option>
+                </select>
+            </div>
+            <div id="d3">
+                <label for="fir">Inicio Reto</label>
+                <input type="date" id="fir" required>
+
+                <label for="ffr">Fin Reto</label>
+                <input type="date" id="ffr" required>
+            </div>
+            <div id="d4">
+                <label for="fii">Inicio Inscripción</label>
+                <input type="date" id="fii" required>
+
+                <label for="ffi">Fin Inscripción</label>
+                <input type="date" id="ffi" required>
+            </div>
+
+            <div id="d5">
+                <p><label for="texta">Descripción</label></p>
+                <textarea rows="5" cols="70" id="texta" name="texta" placeholder="Introduzca su mensaje"></textarea>
+            </div>
+
+            <div id="botones">
+                <button>Volver</button>
+                <input type="submit" value="Aceptar">
+            </div>
+        </form>
+    </div>
+
+    <div id="imagenF">
+        <img src="fundacion.jpg" alt="" width="150">
+    </div>
+</body>
+
+</html>

@@ -26,6 +26,7 @@ nav ul {
     text-align: center;
     list-style: none;
     transform: translate(0%, -50%);
+    width: 100%;
 }
 
 nav ul li {
@@ -40,12 +41,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-.logo {
+.lilogo{
     width: 300px;
 }
 
+.logo {
+    width: 268px;
+}
+
 .link {
-    width: 200px;
+    width: 168px;
 }
 
 .sesion {

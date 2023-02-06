@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: content-box;*/
+
+}
+
+body {
+    border: 1px solid black;
+    width: 1280px;
+    height: 100vh;
+    /*722px*/
+}
+
+nav {
+    width: 100%;
+    /*1280px*/
+    height: 11.0803324099723vh;
+    /*80px*/
+    background: darkslategray;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    list-style: none;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    width: 15.625%;
+    /*  200px*100 / 1280px */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    /*ojo*/
+    /*14px   ////    16px*/
+    text-decoration: none;
+}
+
+.lilogo {
+    width: 23.4375%;
+    /*   300px*100 / 1280px    */
+}
+
+.logo {
+    width: 89.33333333333333%;
+    /*   268px*100 / 300px   */
+}
+
+.link {
+    width: 84%;
+    /*   168px*100 / 200px   */
+}
+
+.sesion {
+    float: right;
+}
+
+
+.link:hover {
+    background-color: #111;
+}
+
+/*Navbar vertical*/
+#navVertical {
+    width: 23.4375%;
+    /*   300px*100 / 1280px    */
+    overflow: hidden;
+    height: 88.6426592797784vh;
+    /*640px;*/
+    background-color: grey;
+    float: left;
+}
+
+#navVertical ul {
+    color: black;
+    width: 100%;
+    /*300px es el 100% de la caja*/
+}
+
+#navVertical ul li {
+    border-bottom: 1px solid black;
+}
+
+#navVertical li a {
+    display: block;
+    width: 86.66666666666667%;
+    /*260px;*/
+    height: 8.310249307479225vh;
+    /*60px;*/
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    /* arriba | derecha | abajo | izquierda */
+    padding: 10px 20px 0 20px;
+    /*ojo*/
+}
+
+#navVertical li:hover {
+    background-color: lightblue;
+}
+
+
+/*Formulario*/
+
+#formulario {
+    float: left;
+    margin-left: 6.25%;
+    /*   80px*100 / 1280px   */
+    margin-top: 8.310249307479225vh;
+    /*60px;*/
+    width: 48.28125%;
+    /*   618px*100 / 1280px   */
+    /*Comparado con el boceto, hay 30px menos porque en la foto he puesto un margin left de 30px*/
+    height: 63.57340720221607vh;
+    /*459px;*/
+    background-color: lightblue;
+    padding: 50px;
+    /*ojo*/
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 8px 5px 5px gray;
+}
+
+#formulario h1 {
+    margin-bottom: 5.54016620498615vh;
+    /*40px;*/
+}
+
+#formulario div {
+    margin-bottom: 3.4626038781163433vh;
+    /*25px;*/
+}
+
+#formulario input,
+#formulario select {
+    border: 0;
+    width: 150px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+#formulario label {
+    margin-left: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+#formulario textarea {
+    margin-left: 10px;
+}
+
+#formulario p {
+    margin-bottom: 5px;
+}
+
+#botones {
+    float: right;
+}
+
+#botones input,
+#botones button {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: gray;
+}
+
+#botones input {
+    background-color: green;
+}
+
+/*Div Imagen*/
+
+#imagenF {
+    float: left;
+    margin-top: 60px;
+    margin-left: 30px;
+    background: lightpink;
+    width: 150px;
+    height: 150px;
+}
