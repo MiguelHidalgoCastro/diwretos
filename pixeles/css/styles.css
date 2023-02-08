@@ -41,7 +41,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.lilogo{
+.lilogo {
     width: 300px;
 }
 
@@ -144,6 +144,7 @@ nav ul li a {
 
 #botones {
     float: right;
+    width: 204px;
 }
 
 #botones input,

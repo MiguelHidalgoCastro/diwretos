@@ -6,12 +6,17 @@
 }
 
 body {
-    border: 1px solid black;
-    width: 1280px;
-    height: 100vh;
+    width: 100%;
+    /*1280px*/
+    height: auto;
     /*722px*/
+    min-width: 400px;
 }
 
+
+/*
+* NAVBAR
+*/
 nav {
     width: 100%;
     /*1280px*/
@@ -42,9 +47,14 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    /*ojo*/
-    /*14px   ////    16px*/
+    /* arriba y abajo | izquierda y derecha */
+    /*padding: 14px 16px;*/
+    padding-top: 1.9390581717451523vh;
+    padding-bottom: 1.9390581717451523vh;
+    /*14px*100 / 722px*/
+    padding-left: 8%;
+    padding-right: 8%;
+    /*16px *100 / 200px*/
     text-decoration: none;
 }
 
@@ -56,6 +66,9 @@ nav ul li a {
 .logo {
     width: 89.33333333333333%;
     /*   268px*100 / 300px   */
+    padding-left: 5.333333333333333%;
+    padding-right: 5.333333333333333%;
+    /*16px *100 / 300px*/
 }
 
 .link {
@@ -72,13 +85,15 @@ nav ul li a {
     background-color: #111;
 }
 
-/*Navbar vertical*/
+/*
+*Navbar vertical
+*/
 #navVertical {
     width: 23.4375%;
     /*   300px*100 / 1280px    */
     overflow: hidden;
     height: 88.6426592797784vh;
-    /*640px;*/
+    /*640px*100 / 722px*/
     background-color: grey;
     float: left;
 }
@@ -96,23 +111,31 @@ nav ul li a {
 #navVertical li a {
     display: block;
     width: 86.66666666666667%;
-    /*260px;*/
+    /*  260px*100  /  300px  */
     height: 8.310249307479225vh;
-    /*60px;*/
+    /*60px*100 / 722px*/
     text-decoration: none;
     text-align: center;
     color: black;
+
+    /*padding: 10px 20px 0 20px;*/
     /* arriba | derecha | abajo | izquierda */
-    padding: 10px 20px 0 20px;
-    /*ojo*/
+    padding-top: 1.3850415512465375vh;
+    /*10px *100 / 722px*/
+    padding-right: 6.666666666666667%;
+    /* 20px *100  /  300px*/
+    padding-left: 6.666666666666667%;
+    /* 20px *100  /  300px*/
+
 }
 
 #navVertical li:hover {
     background-color: lightblue;
 }
 
-
-/*Formulario*/
+/*
+*Formulario
+*/
 
 #formulario {
     float: left;
@@ -146,33 +169,42 @@ nav ul li a {
 #formulario input,
 #formulario select {
     border: 0;
-    width: 150px;
-    height: 20px;
+    width: 24.27184466019417%;
+    /*150px*100 / 618px*/
+    height: 2.770083102493075vh;
+    /*20px*100 / 722px*/
     border-radius: 4px;
 }
 
 #formulario label {
-    margin-left: 10px;
+    margin-left: 1.618122977346278%;
+    /*10px*100 / 618px*/
     display: inline-block;
-    width: 100px;
+    width: 16.18122977346278%;
+    /*100px*100 / 618px*/
 }
 
 #formulario textarea {
-    margin-left: 10px;
+    margin-left: 1.618122977346278%;
+    /*10px*100 / 618px*/
 }
 
 #formulario p {
-    margin-bottom: 5px;
+    margin-bottom: 0.6925207756232687vh;
+    /*5px*100 / 722px*/
 }
 
 #botones {
     float: right;
+    width: 204px;
 }
 
 #botones input,
 #botones button {
-    width: 100px;
-    height: 30px;
+    width: 49.01960784313725%;
+    /*100px*100 / 204px*/
+    height: 4.1551246537396125vh;
+    /*30px*100 / 722px*/
     border-style: none;
     border-radius: 3px;
     background-color: gray;
@@ -182,13 +214,149 @@ nav ul li a {
     background-color: green;
 }
 
-/*Div Imagen*/
+/*
+*Div Imagen
+*/
 
 #imagenF {
     float: left;
-    margin-top: 60px;
-    margin-left: 30px;
+    margin-top: 8.310249307479225vh;
+    /*60px*100 / 722px*/
+    margin-left: 2.34375%;
+    /*30px*100 / 1280px*/
     background: lightpink;
-    width: 150px;
-    height: 150px;
+    width: 11.71875%;
+    /*150px*100 / 1280px*/
+    height: 20.775623268698062vh;
+    /*150px*100 / 722px*/
+}
+
+/*
+* MEDIAS QUERY'S
+*/
+
+/*Para que la imagen no se caiga, se empieza a caer un poco por debajo de 1300px*/
+@media (max-width: 1300px) {
+    #navVertical {
+        height: auto;
+    }
+
+    #formulario {
+        width: 40%;
+        height: auto;
+    }
+
+    #formulario textarea {
+        width: 80%;
+    }
+
+    #imagenF img {
+        width: 80%;
+    }
+}
+
+/*
+*TABLET
+*/
+@media (max-width:700px) {
+    #imagenF {
+        display: none;
+    }
+
+    #formulario {
+        margin: 2%;
+        width: 56%;
+
+    }
+
+    #formulario label {
+        width: 100%;
+
+    }
+
+    #formulario input,
+    #formulario select {
+        width: 80%;
+
+    }
+
+    #botones {
+        float: right;
+        width: 100%;
+    }
+
+    #botones input,
+    #botones button {
+        width: 49%;
+
+    }
+
+    #botones input {
+        background-color: green;
+    }
+}
+
+/*
+* MOVIL
+*/
+
+@media (max-width:640px) {
+
+    /*Copio el estilo de la navbar horizontal a la navbar vertical*/
+    #navVertical {
+        width: 100%;
+        height: 11.0803324099723vh;
+        text-align: center;
+        position: relative;
+    }
+
+    #navVertical ul {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        list-style: none;
+        transform: translate(0%, -50%);
+        width: 100%;
+    }
+
+    #navVertical ul li {
+        float: left;
+        width: 14.28571428571429%;
+    }
+
+    #navVertical li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 1.9390581717451523vh;
+        padding-bottom: 1.9390581717451523vh;
+        padding-left: 8%;
+        padding-right: 8%;
+        text-decoration: none;
+    }
+
+    #navVertical li:hover {
+        background-color: lightblue;
+    }
+
+   
+    #formulario{
+        width: 80%;
+        margin: 0;
+        margin-top: 1vh;
+    }
+    
+    #formulario input,
+    #formulario select {
+        width: 100%;
+
+    }
+    #formulario textarea{
+        width: 100%;
+    }
+    #botones input,
+    #botones button {
+        width: 100%;
+        margin-bottom: 1vh;
+    }
 }
